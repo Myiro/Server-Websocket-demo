@@ -15,7 +15,7 @@ namespace WS.Client
 
             using (ClientWebSocket client = new ClientWebSocket())
             {
-                Uri serviceUri = new Uri("ws://185.180.21.127:5000/send");
+                Uri serviceUri = new Uri("ws://localhost:5000/send");
                 var cTs = new CancellationTokenSource();
                 cTs.CancelAfter(TimeSpan.FromSeconds(120));
                 try
